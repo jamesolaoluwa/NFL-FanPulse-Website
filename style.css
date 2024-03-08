@@ -1,0 +1,673 @@
+/* general styling */
+*,
+*::after,
+*::after,
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: clamp(1.125rem,2vw,1.35rem);
+}
+html{font-size:  62.5%;}
+body{
+  line-height: 1.5;
+  background-color: white;
+  overflow-x: hidden;
+}
+.case{
+  margin-top: 8rem;
+}
+
+.beautyredbar{
+  width: 100%;
+  background-color: #d40909;
+  border: 6px solid  #d40909;
+}
+.hidebluebar{
+    width: 100%;
+    border: 6px solid white;
+    transform: translateY(87px);
+    z-index: 128;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #023266;
+    padding: 0.5rem 2rem;
+}
+
+.logo {
+    
+    font-size: 5rem;
+    color: white;
+    position: relative;
+}
+
+.logo > img{
+    width: 5.1rem;
+    position: absolute;
+    top: 2px;
+    height: 5.1rem;
+}
+
+
+.navbar> .nav_right> .nav_items> a {
+  text-decoration: none;
+  list-style: none;
+  color: whitesmoke;
+  
+  margin: 2rem 2rem 0 0;
+  display: inline-block;
+  transition: color 0.2s;
+}
+.navbar> .nav_right> .nav_items >a > li{
+  font-size: 2rem;
+}
+.navbar> .nav_right> .nav_items >a>  li:hover{
+  color: #d40909;
+  cursor: pointer;
+}
+
+.nav_items > li:hover, #account_person:hover{
+  color: #d40909;
+  cursor: pointer;
+}
+
+
+.nav_right{
+    display: flex;
+}
+
+#account_person{
+    color: whitesmoke;
+    margin: 1.35rem 2rem 0 0;
+    font-size: 3.4rem;
+}
+
+
+
+
+
+/* home css */
+.header_image{
+    width: 70%;
+    height : 60rem;
+    margin: 2rem 0 .12rem;
+}
+
+.header{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.header_text > h1{
+    font-size: 3.8rem;
+    text-align: center;
+  }
+
+.header_text > p{
+    color: #24262b;
+    font-size: 1.4rem;
+    margin: 2.5rem;
+  }
+
+p,div,li{
+    animation: fade1 linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+
+
+  @keyframes fade1 {
+    from{
+      opacity: 0.3;
+    }
+    to{
+      opacity: 1;
+    }
+    
+  }
+
+.intro_container{
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+/*Beginning of 1st section*/
+.intro_container-box1, .intro_container-box2{
+  display: flex;
+}
+
+.image-placeholder {
+  background: #ccc;
+  width: 40rem; 
+  height: 30rem;
+  margin: 0.2rem;
+}
+
+.header_image{
+    width: 70%;
+    height : 60rem;
+    margin: 2rem 0 .12rem;
+}
+
+.HuddleSphereImage{
+  width: 25%;
+  height : 65rem;
+  margin: 2rem 2rem 0 10rem;
+  border-radius: 1rem;
+}
+
+.FanImage{
+  width: 70%;
+  height : 40rem;
+  margin: 2rem 2rem 0 10rem;
+  border-radius: 3rem;
+}
+
+.content {
+  background: #fff; 
+  border-radius: .6rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.content p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.intro_container-box2{
+  margin-top: 2rem;
+}
+
+
+/*end of 1st section*/
+
+/*2nd section*/
+
+.general_container{
+  display: flex;
+  margin: 4rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container_image{
+  background: #ccc;
+  background-image: url("asset/FantasyNFL.jpg");
+  width: 40rem; 
+  height: 30rem;
+  border-radius: .5rem;
+}
+
+.container_image2{
+  background: #ccc;
+  background-image: url("asset/NFL\ Bitmojis.webp");
+  background-size: cover;
+  width: 40rem; 
+  height: 30rem;
+  border-radius: .5rem;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 36rem;
+  justify-content: center;
+  border: 0.1rem solid #B4B4B4;
+  border-radius: .7rem;
+}
+
+.general_container h1 {
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.general_container p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/*3rd section beginning*/
+
+.general_container2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagep{
+  background: #ccc;
+  background-image: url("asset/MainBadge.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30rem; 
+  height: 30rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.imagep2{
+  background: #ccc;
+  background-image: url("asset/RankIncrease.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30rem; 
+  height: 30rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.imagep3{
+  background: #ccc;
+  background-image: url("asset/NFLHappyFAn.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30rem; 
+  height: 30rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1rem solid #B4B4B4;
+  border-radius: 1rem;
+  margin: 2rem; 
+  width: 30rem;
+  height: 45rem;
+  max-width: 40rem;
+}
+
+.general_container2 h1 {
+  text-align: left; 
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize; /* Make text casing consistent */
+  font-weight: normal; /* Adjust weight if necessary to match both */
+}
+
+.general_container2 p {
+  text-align: left; /* Center the paragraph text */
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.container_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%; 
+}
+
+.intro_container-box2{
+  margin-top: 3rem;
+}
+
+/*Beginning of Section 4*/
+
+.section_4_image_holder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxes{
+  display: flex;
+  border: 0.1rem solid #B4B4B4;
+  border-radius: 1rem;
+  margin: 2rem; 
+  width: 30rem;
+  height: 30rem;
+  justify-content: center;
+  align-items: end;
+}
+
+/*End of Section 4*/
+
+/*FAQ Section Beginning*/
+
+.faq_container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 65rem;
+}
+
+.faq_container > h2{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #d40909;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 2.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #d40909;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #d40909;
+  border: 1px solid #d40909;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  font-size: 2rem;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 0.rem;
+  right: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0.1rem solid;
+  border-radius: 2.2rem;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #d40909;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+
+/*Footer Start*/
+.footer-container{
+  max-width: 117rem;
+  margin: auto;
+  animation: none;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer{
+  background-color: #24262b;
+  padding: 5rem 0;
+  animation: none;
+}
+.footer * {
+  animation: none !important;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 1.5rem;
+}
+
+.footer-col h4{
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 3.2rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -1rem;
+  background-color: #e91e63;
+  height: 0.2rem;
+  box-sizing: border-box;
+  width: 5rem;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 1rem;
+
+}
+
+.footer-col ul li a{
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  animation: none;
+}
+
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 0.8rem;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 1rem 1rem 0;
+  text-align: center;
+  line-height: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+
+}
+
+.footer-text{
+  list-style: none;
+}
+
+/*responsive footer*/
+@media(max-width: 76.7rem){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 57.4rem){
+  .footer-col{
+    width: 100%;
+  }
+}
+
+
+
+/* case css */
+.wrapper {
+    margin: auto;
+    max-width: 640px;
+    padding-top: 60px;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .wrapper > .container > h1 {
+    color: #130f40;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: -.5px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 4rem;
+  }
+  
+  .border-container > p, #file-upload{
+    font-size: 1.8rem;
+
+  }
+
+
+  .upload-container {
+    background-color: rgb(239, 239, 239);
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  .border-container {
+    border: 5px dashed rgba(198, 198, 198, 0.65);
+  /*   border-radius: 4px; */
+    padding: 20px;
+  }
+  
+  .border-container p {
+    color: #130f40;
+    font-weight: 600;
+   
+    letter-spacing: -1px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    opacity: 0.65;
+  }
+  
+  #file-browser {
+    text-decoration: none;
+    color: rgb(22,42,255);
+    border-bottom: 3px dotted rgba(22, 22, 255, 0.85);
+  }
+  
+  #file-browser:hover {
+    color: rgb(0, 0, 255);
+    border-bottom: 3px dotted rgba(0, 0, 255, 0.85);
+  }
+  
+  .icons {
+    color: #95afc0;
+    opacity: 0.55;
+  }
+
+  /*General Button Style*/
+  .general_button {
+    background: red;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 3rem;
+  }
+
+  .section_4_button{
+    margin-bottom: 2rem;
+  }
+
+
+  .footer-text > li >a{
+    color: black;
+    /* border: 1px solid orange; */
+  }
+
+  .social-links{
+    color:black;
+    font-size: 2rem;
+  }
+
