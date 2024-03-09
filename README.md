@@ -1,6 +1,6 @@
 # NFL FanPulse
 
-Welcome to the my NFL FanPulse website which is the landing page to the NFL FanPulse app; a groundbreaking AI-driven platform designed to revolutionize the NFL viewing experience. Developed under the vision of leveraging artificial intelligence to increase fan engagement, our aim is to convert avid NFL fans into paying subscribers of NFL+ and NFL+ Premium services.
+Welcome to the my NFL FanPulse website I developed for the 2024 Battle of the Brains Hackathon which is the landing page to the NFL FanPulse app; a groundbreaking AI-driven platform designed to revolutionize the NFL viewing experience. Developed under the vision of leveraging artificial intelligence to increase fan engagement, our aim is to convert avid NFL fans into paying subscribers of NFL+ and NFL+ Premium services.
 
 ## About
 
@@ -17,6 +17,7 @@ NFL FanPulse is an innovative ecosystem integrated within the NFL+ service to en
 ## Getting Started
 
 To visit my website, go to:
+https://olaoluwanflfanpulse.netlify.app/
 
 
 
